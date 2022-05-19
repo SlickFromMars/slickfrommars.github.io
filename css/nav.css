@@ -1,4 +1,4 @@
-.nav_ul {
+.nav_bar {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,24 +10,29 @@
     top: 0;
 }
 
-.nav_li {
+.nav_tab {
     float: left;
-    border-right:1px solid #bbb;
+    background-color: transparent;
+    border: hidden;
 }
 
-.nav_li:last-child {
+.nav_tab:last-child {
     border-right: none;
 }
 
-.nav_li a {
+.nav_tab a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 10px 16px;
     text-decoration: none;
     transition-duration: 0.1s;
 }
 
-.nav_li a:hover {
+.nav_tab:hover {
     background-color: #111;
+}
+
+.tab_content {
+    display: none;
 }
