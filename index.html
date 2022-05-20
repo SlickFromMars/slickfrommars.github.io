@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
         <meta name="keywords" content="SlickFromMars, Foldverse, Project Expansion">
         <meta name="description" content="SlickFromMars' Official Website. Still WIP">
         <meta name="author" content="SlickFromMars">
@@ -11,35 +12,63 @@
 
         <link rel="icon" type="image/x-icon" href="resources/logo.png">
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="css/styles.css" type="text/css">
         <link rel="stylesheet" href="css/nav.css" type="text/css">
 	</head>
 
     <div class="nav_bar">
-        <button class="nav_tab" onclick="openTab(event, 'About')"><a>About Me</a></button>
+        <img class="nav_logo" onclick="openTab(event, 'Home')" src="resources/logo.png" alt="Slick" width="4%" height="4%">
         <button class="nav_tab" onclick="openTab(event, 'Foldverse')"><a>Foldverse</a></button>
         <button class="nav_tab" onclick="openTab(event, 'Projects')"><a>Projects</a></button>
         <button class="nav_tab" onclick="openTab(event, 'Merch')"><a>Merch</a></button>
-        <img class="nav_logo" onclick="openTab(event, 'About')" src="resources/logo.png" alt="Slick" width="4%" height="4%">
     </div>
 
     <!-- Tab content -->
-    <div id="About" class="tab_content" style="display: block;">
+    <div id="Home" class="tab_content" style="display: block;">
         <div class="about_header">
             <h1>SlickFromMars</h1>
         </div>
     </div>
 
     <div id="Foldverse" class="tab_content">
-        <p>Under construction :)</p>
+        <div class="about_header">
+            <h1>Foldverse Productions</h1>
+        </div>
+
+        <div class="phase_grp">
+            <h2>Phase 2</h2>
+            <h3>Into The Paraverse</h3>
+
+            <div class="phase_organize">
+                <img class="phase_poster" src="resources/showcase/expansion-poster.png" alt="Project Expansion">
+            </div>
+        </div>
+
+        <div class="phase_grp">
+            <h2>Phase 1</h2>
+            <h3>Folda And Friends</h3>
+
+            <div class="phase_organize">
+                <img class="phase_ls" src="resources/showcase/rp_1.png" alt="FAF Multiverse War">
+                <img class="phase_ls" src="resources/showcase/foldverse_1.png" alt="FAF The Game">
+                <img class="phase_ls" src="resources/showcase/foldverse_2.png" alt="FAF Multiverse War">
+                <img class="phase_ls" src="resources/showcase/rp_2.png" alt="FAF Multiverse War">
+            </div>
+        </div>
+
     </div>
 
     <div id="Projects" class="tab_content">
-        <p>Under construction :)</p>
+        <div class="about_header">
+            <h1>Other Projects</h1>
+        </div>
     </div>
 
     <div id="Merch" class="tab_content">
-        <p>Under construction :)</p>
+        <div class="about_header">
+            <h1>Coming Soon</h1>
+        </div>
     </div>
 
 </html>

@@ -38,10 +38,12 @@
 
 .nav_logo {
     display: block;
-    float: right;
+    float: left;
     background-color: transparent;
     padding: 1px 5px;
+    padding-right: 8px;
     transition-duration: 0.2s;
+    border-right: 0.3vw solid #e7e7e7;
 }
 
 .nav_logo:hover {
