@@ -12,14 +12,11 @@
 
 .nav_tab {
     float: left;
+    transition-duration: 0.1s;
     background-color: transparent;
     border: hidden;
     padding: 1% 2%;
     margin: auto;
-}
-
-.nav_tab:last-child {
-    border-right: none;
 }
 
 .nav_tab a {
@@ -27,7 +24,6 @@
     color: white;
     text-align: center;
     text-decoration: none;
-    transition-duration: 0.2s;
     font-size: 1.6vw;
     white-space:nowrap;
 }
@@ -42,14 +38,10 @@
     background-color: transparent;
     padding: 1px 5px;
     padding-right: 8px;
-    transition-duration: 0.2s;
+    transition-duration: 0.1s;
     border-right: 0.3vw solid #ffffffc0;
 }
 
 .nav_logo:hover {
     background-color: #111;
-}
-
-.tab_content {
-    display: none;
 }
