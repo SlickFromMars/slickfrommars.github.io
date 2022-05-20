@@ -16,6 +16,18 @@
     border: hidden;
 }
 
+.nav_logo {
+    display: block;
+    float: right;
+    background-color: transparent;
+    padding: 1px 5px;
+    transition-duration: 0.2s;
+}
+
+.nav_logo:hover {
+    background-color: #111;
+}
+
 .nav_tab:last-child {
     border-right: none;
 }
@@ -26,7 +38,7 @@
     text-align: center;
     padding: 10px 16px;
     text-decoration: none;
-    transition-duration: 0.1s;
+    transition-duration: 0.2s;
 }
 
 .nav_tab:hover {
