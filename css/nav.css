@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid #e7e7e7;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -33,7 +33,7 @@
 }
 
 .nav_tab:hover {
-    background-color: #111;
+    background-color: black;
 }
 
 .nav_logo {
@@ -43,7 +43,7 @@
     padding: 1px 5px;
     padding-right: 8px;
     transition-duration: 0.2s;
-    border-right: 0.3vw solid #e7e7e7;
+    border-right: 0.3vw solid #ffffffc0;
 }
 
 .nav_logo:hover {

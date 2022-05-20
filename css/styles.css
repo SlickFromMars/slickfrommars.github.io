@@ -12,13 +12,9 @@ body {
     padding: 40px;
 
     background-color: aliceblue;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
-h1 {
+.about_header h1 {
     font-size: 3vw;
     animation-name: fade-in;
     animation-duration: 1.5s;
