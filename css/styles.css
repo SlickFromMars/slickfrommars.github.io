@@ -1,3 +1,26 @@
 body {
     background-color:gainsboro;
 }
+
+@keyframes fade-in {
+    from {opacity: 0.5;}
+    to {opacity: 1;}
+}
+
+.about_header {
+    text-align: center;
+    padding: 40px;
+    animation-name: fade-in;
+    animation-duration: 1s;
+    
+
+    background-color: aliceblue;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about_header h1 {
+    font-size: 3vw;
+}
