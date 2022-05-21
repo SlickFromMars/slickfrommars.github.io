@@ -27,34 +27,39 @@
     border-top: 0.5vw solid #000000;
 }
 
-.phase_grp img {
+.phase_organize {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 80vw;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    height: fit-content;
+    flex: 25%;
+    justify-content: center;
+}
+
+.phase_organize img {
     border-radius: 1vw;
     border: 0.35vw solid #ffffff00;
     margin: 0.65vw;
-    padding: 0px;
     transition-duration: 0.7s;
+    vertical-align: middle;
+    flex-grow: 0;
+    flex-shrink: 0;
 }
 
-.phase_grp img:hover {
-    border: 0.35vw solid #ffffff;
+.phase_organize img:hover {
+    border-color: #ffffff;
     border-radius: 0.5vw;
 }
 
 .phase_poster {
-    width: 19.25vw;
+    width: 19vw;
     height: auto;
 }
 
 .phase_ls {
-    width: 20vw;
+    width: 18vw;
     height: auto;
-}
-
-.phase_organize {
-    content: "";
-    clear: both;
-    display: table;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
 }
