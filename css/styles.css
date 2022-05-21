@@ -19,3 +19,8 @@ body {
     animation-name: fade-in;
     animation-duration: 1.5s;
 }
+
+.about_header img {
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
