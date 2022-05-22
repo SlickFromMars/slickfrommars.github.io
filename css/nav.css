@@ -1,13 +1,12 @@
 .nav_bar {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid #e7e7e7;
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    margin-bottom: 1vh;
 }
 
 .nav_tab {
@@ -17,6 +16,7 @@
     border: hidden;
     padding: 1% 2%;
     margin: auto;
+    justify-content: center;
 }
 
 .nav_tab a {
@@ -25,7 +25,7 @@
     text-align: center;
     text-decoration: none;
     font-size: 1.6vw;
-    white-space:nowrap;
+    white-space: nowrap;
 }
 
 .nav_tab:hover {
@@ -37,11 +37,20 @@
     float: left;
     background-color: transparent;
     padding: 1px 5px;
-    padding-right: 8px;
     transition-duration: 0.1s;
     border-right: 0.3vw solid #ffffffc0;
 }
 
 .nav_logo:hover {
     background-color: #111;
+}
+
+@media only screen and (max-width: 600px) {
+    .nav_logo {
+        padding: 1.2vw 1.2vw;
+    }
+
+    .nav_tab a {
+        font-size: 2.4vw;
+    }
 }

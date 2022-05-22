@@ -63,3 +63,26 @@
     width: 18vw;
     height: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    .phase_organize {
+        flex: 50%;
+    }
+
+    .phase_poster {
+        width: 36vw;
+    }
+
+    .phase_ls {
+        width: 36vw;
+    }
+
+    .phase_grp h2 {
+        font-size: 4vh;
+    }
+
+    .phase_grp h3 {
+        font-size: 3vh;
+        border-top-width: 0.5vh;
+    }
+}
