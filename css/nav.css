@@ -42,6 +42,8 @@
     padding: 1px 5px;
     transition-duration: 0.1s;
     border-right: 0.3vw solid #ffffffc0;
+    width: 4%;
+    height: 4%;
 }
 
 .nav_logo:hover {

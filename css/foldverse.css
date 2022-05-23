@@ -44,6 +44,7 @@
 }
 
 .phase_organize img {
+    background-color: white;
     border-radius: 1vw;
     border: 0.35vw solid #ffffff00;
     margin: 0.65vw;

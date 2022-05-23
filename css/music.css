@@ -1,0 +1,95 @@
+.music_grp {
+    margin-top: 2vh;
+    height: 19vh;
+    background-color: rgba(0, 0, 0, 0.192);
+    padding: 1.5vh 0px;
+    border-radius: 1vh;
+    overflow: hidden;
+    transition-duration: 0.5s;
+}
+
+.music_grp img {
+    width: 18vh;
+    border: 0.5vh solid white;
+    border-radius: 1vh;
+    margin-left: 2vh;
+}
+
+.music_icon {
+    width: 5vw;
+}
+
+.music_grp div {
+    width: 70%;
+    float: right;
+    margin: 0px;
+}
+
+.music_grp div h1 {
+    font-size: 5vh;
+    margin-bottom: 0px;
+}
+
+.music_grp div h2 {
+    width: 15%;
+    min-width: fit-content;
+    margin: 0px;
+    font-size: 2vh;
+    border-top: 0.3vh solid black;
+}
+
+.music_grp div button {
+    float: left;
+    transition-duration: 0.1s;
+    background-color: rgba(0, 0, 0, 0.068);
+    border: hidden;
+    padding: 1% 2%;
+    margin: auto;
+    justify-content: center;
+    border-radius: 1vh;
+}
+
+.music_grp div button a {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    display: block;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6vw;
+    white-space: nowrap;
+}
+
+.music_grp div button:hover {
+    background-color: rgba(0, 0, 0, 0.411);
+}
+
+@media only screen and (max-width: 600px) {
+    .music_grp {
+        height: fit-content;
+    }
+
+    .music_grp img {
+        width: 18vw;
+    }
+
+    .music_grp div h1 {
+        font-size: 5vw;
+    }
+}
+
+@media only screen and (min-width: 800px) {
+    .music_grp {
+        width: 70%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .music_grp {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .music_grp div {
+        width: 80%;
+    }
+}

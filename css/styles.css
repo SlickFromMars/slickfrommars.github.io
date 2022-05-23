@@ -2,6 +2,7 @@
 
 body {
     background-color:gainsboro;
+    margin: 1vh;
 }
 
 @keyframes fade-in {
