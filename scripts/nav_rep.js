@@ -25,7 +25,6 @@ target.appendChild(icon);
 
 // the buttons
 var tab_list = [
-    "Content",
     "Foldverse",
     "Music"
 ];
