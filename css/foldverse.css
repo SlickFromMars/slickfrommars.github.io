@@ -44,9 +44,9 @@
 }
 
 .phase_organize img {
-    background-color: white;
+    background-color: transparent;
     border-radius: 1vw;
-    border: 0.35vw solid #ffffff00;
+    border: 0.35vw solid transparent;
     margin: 0.65vw;
     transition-duration: 0.7s;
     vertical-align: middle;
@@ -55,7 +55,8 @@
 }
 
 .phase_organize img:hover {
-    border-color: #ffffff;
+    background-color: white;
+    border-color: white;
     border-radius: 0.5vw;
 }
 
