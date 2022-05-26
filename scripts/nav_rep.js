@@ -16,7 +16,7 @@ icon.href = pre_path + "index.html";
 
 img = document.createElement("img");
 img.classList.add("nav_logo");
-img.src = pre_path + "resources/logo.png";
+img.src = pre_path + "resources/logo.webp";
 img.alt = "Home";
 
 icon.appendChild(img);
@@ -30,15 +30,15 @@ var tab_list = [
     "Music"
 ];
 
-for (tab_name in tab_list) {
+tab_list.forEach(function(tab_name) {
     tab = document.createElement("button");
     tab.classList.add("nav_tab");
 
     tab_tex = document.createElement("a");
-    tab_tex.innerHTML = tab_list[tab_name];
-    tab_tex.href = pre_path + "pages/" + tab_list[tab_name].toLowerCase() + "/main.html";
+    tab_tex.innerHTML = tab_name;
+    tab_tex.href = pre_path + "pages/" + tab_name.toLowerCase() + "/main.html";
 
     tab.appendChild(tab_tex);
 
     target.appendChild(tab);
-}
+})

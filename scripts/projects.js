@@ -1,7 +1,5 @@
 var target = document.getElementById('ProjectContainer');
 
-var data;
-
 var repo_list = [
     'Shredded-Plugin',
     'Slick-Addons',
@@ -9,13 +7,14 @@ var repo_list = [
 ];
 
 repo_list.forEach(function(repo) {
-    dataGet(repo);
+    let data = dataGet(repo);
+    console.log(data);
 
     main = document.createElement("div");
     main.classList.add("container_grp");
 
     logo = document.createElement("img");
-    logo.src = "../../resources/cool_icon.png"
+    logo.src = "../../resources/icon.webp";
 
     tex = document.createElement("div");
 
@@ -44,13 +43,13 @@ repo_list.forEach(function(repo) {
 
 function dataGet(repo)
 {
-    data = JSON.parse(httpGet("https://api.github.com/repos/SlickFromMars/" + repo));
+    return JSON.parse(httpGet("https://api.github.com/repos/SlickFromMars/" + repo));
 }
 
 function httpGet(theUrl)
 {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", theUrl, false); // false for synchronous request
+    xhr.send(null);
+    return xhr.responseText;
 }
