@@ -9,7 +9,7 @@ var repo_list = [
 ];
 
 repo_list.forEach(function(repo) {
-    dataGet(repo)
+    dataGet(repo);
 
     main = document.createElement("div");
     main.classList.add("container_grp");
@@ -37,7 +37,7 @@ repo_list.forEach(function(repo) {
     tex.appendChild(view);
 
     main.appendChild(logo);
-    main.appendChild(tex)
+    main.appendChild(tex);
 
     target.appendChild(main);
 });
