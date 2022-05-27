@@ -18,24 +18,25 @@
     100% {border-top: solid 1vh initial}
 }
 
+.container_top a {
+    width: fit-content;
+    height: fit-content;
+}
+
 .container_top a img {
-    width: 20vw;
+    width: 19vw;
     border-radius: 50%;
     animation-name: enter-pfp;
     animation-duration: 1s;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin: 0px 1vw;
     vertical-align: middle;
     max-width: 110px;
 }
 
 #pfp {
-    border-radius: 50%;
     max-width: none;
     width: 50vw;
     animation-name: enter-pfp-m;
-    margin-left: 10px;
-    margin-right: 10px;
 }
 
 @keyframes enter-pfp-m {
