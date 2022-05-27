@@ -1,0 +1,70 @@
+.container_top {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    justify-content: center;
+}
+
+.container_top:last-child {
+    border-top: solid 1vh black;
+    animation-name: enter-border;
+    animation-duration: 1s;
+}
+
+@keyframes enter-border {
+    0% {border-top: solid 1vh transparent}
+    50% {border-top: solid 1vh transparent}
+    100% {border-top: solid 1vh initial}
+}
+
+.container_top a img {
+    width: 20vw;
+    border-radius: 50%;
+    animation-name: enter-pfp;
+    animation-duration: 1s;
+    margin-left: 10px;
+    margin-right: 10px;
+    vertical-align: middle;
+    max-width: 110px;
+}
+
+#pfp {
+    border-radius: 50%;
+    max-width: none;
+    width: 50vw;
+    animation-name: enter-pfp-m;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+@keyframes enter-pfp-m {
+    from {opacity: 0; transform: translate(0px, 20vh);}
+    to {opacity: 1; transform: none;}
+}
+
+@keyframes enter-pfp {
+    0% {opacity: 0;}
+    50% {opacity: 0;}
+    100% {opacity: 1;}
+}
+
+#username {
+    animation-name: enter-un;
+    animation-duration: 1s;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 5vh;
+}
+
+@keyframes enter-un {
+    0% {transform: translate(0px, -10vh);}
+    100% {transform: none;}
+}
+
+@media only screen and (min-width: 800px) {
+    #pfp {
+        width: 50vh;
+    }
+}

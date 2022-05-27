@@ -1,3 +1,15 @@
+var tab_list = [
+    "Foldverse",
+    "Projects",
+    "Music"
+];
+
+var repo_list = [
+    'Shredded-Plugin',
+    'Slick-Addons',
+    'ABLE-Tech'
+];
+
 nav_rep();
 
 if(document.location.href.endsWith("projects/main.html")) {
@@ -31,11 +43,6 @@ function nav_rep() {
     target.appendChild(icon);
 
     // the buttons
-    var tab_list = [
-        "Foldverse",
-        "Projects",
-        "Music"
-    ];
 
     tab_list.forEach(function(tab_name) {
         let comment = document.createComment(tab_name + " Tab");
@@ -56,12 +63,6 @@ function nav_rep() {
 
 function project_rep() {
     var target = document.getElementById('ProjectContainer');
-
-    var repo_list = [
-        'Shredded-Plugin',
-        'Slick-Addons',
-        'ABLE-Tech'
-    ];
 
     repo_list.forEach(function(repo) {
         let img_path = "../../resources/icon.webp";
