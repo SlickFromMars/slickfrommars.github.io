@@ -79,6 +79,8 @@ function project_rep() {
         main.classList.add("container_grp");
 
         logo = document.createElement("img");
+        logo.alt = repo;
+        logo.loading = "lazy";
         logo.src = img_path;
 
         tex = document.createElement("div");
