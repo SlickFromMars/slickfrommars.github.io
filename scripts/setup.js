@@ -38,6 +38,9 @@ function nav_rep() {
     ];
 
     tab_list.forEach(function(tab_name) {
+        let comment = document.createComment(tab_name + " Tab");
+        target.appendChild(comment);
+        
         tab = document.createElement("button");
         tab.classList.add("nav_tab");
 
@@ -63,7 +66,9 @@ function project_rep() {
     repo_list.forEach(function(repo) {
         let img_path = "../../resources/icon.webp";
         let data = dataGet(repo);
-        console.log(data);
+        
+        let comment = document.createComment(data.html_url);
+        target.appendChild(comment);
 
         switch(data.name) {
             case "Slick-Addons":
