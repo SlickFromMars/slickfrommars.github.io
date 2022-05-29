@@ -1,3 +1,17 @@
+body {
+    margin: 0px;
+}
+
+.nav_bar {
+    margin: 1vh;
+    margin-bottom: 2vh;
+}
+
+.about_header {
+    margin-left: 1vh;
+    margin-right: 1vh;
+}
+
 #MasterContainer {
     display: flex;
     flex-direction: column;
