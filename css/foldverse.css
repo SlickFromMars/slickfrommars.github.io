@@ -1,94 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
-
-@keyframes fade-in {
-    from {opacity: 0.3;}
-    to {opacity: 1;}
-}
-
-.phase_grp {
-    animation-name: fade-in;
-    animation-duration: 0.5s;
-}
-
-.phase_grp h2 {
-    font-size: 3vw;
-    text-align: center;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2px;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-.phase_grp h3 {
-    font-size: 2vw;
-    text-align: center;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    border-top: 0.5vw solid #000000;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-}
-
-.phase_organize {
+#MasterContainer {
     display: flex;
-    flex-wrap: wrap;
-    max-width: 80vw;
-    width: max-content;
-    margin-left: auto;
-    margin-right: auto;
-    height: fit-content;
-    flex: 25%;
-    justify-content: center;
+    flex-direction: column;
 }
 
-.phase_organize img {
-    background-color: transparent;
-    border-radius: 1vw;
-    border: 0.35vw solid transparent;
-    margin: 0.65vw;
-    transition-duration: 0.7s;
-    vertical-align: middle;
-    flex-grow: 0;
-    flex-shrink: 0;
+.ContentContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.phase_organize img:hover {
-    background-color: white;
-    border-color: white;
-    border-radius: 0.5vw;
+.ContentTitle {
+    font-size: 5vh;
+    margin-left: 1vw;
+    width: fit-content;
+    margin-bottom: 1vh;
 }
 
-.phase_poster {
+.ContentRowContainer {
+    display: flex;
+    height: max-content;
+    overflow: auto;
+    white-space: nowrap
+}
+
+.ContentRowContainer * {
     width: 19vw;
-    height: auto;
+    margin: 0px 1vw;
+    border-radius: 0.3vw;
+    border: solid 0.4vw;
+    border-color: transparent;
+    transition-duration: 0.5s;
 }
 
-.phase_ls {
-    width: 18vw;
-    height: auto;
+.ContentRowContainer *:hover {
+    border-color: white;
+    background-color: white;
 }
 
 @media only screen and (max-width: 600px) {
-    .phase_organize {
-        flex: 50%;
-    }
-
-    .phase_poster {
-        width: 36vw;
-    }
-
-    .phase_ls {
-        width: 36vw;
-    }
-
-    .phase_grp h2 {
-        font-size: 4vh;
-    }
-
-    .phase_grp h3 {
-        font-size: 3vh;
-        border-top-width: 0.5vh;
+    .ContentRowContainer * {
+        width: 30vw;
     }
 }
