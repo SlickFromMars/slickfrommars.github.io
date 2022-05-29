@@ -1,4 +1,14 @@
 {
+    "legacy": {
+        "title": "Legacy Productions",
+        "format": "normal",
+        "contents": [
+            "rp_1",
+            "foldverse_1",
+            "foldverse_2",
+            "rp_2"
+        ]
+    },
     "coming_soon": {
         "title": "Coming Soon",
         "format": "poster",
