@@ -10,7 +10,9 @@ var repo_list = [
     'ABLE-Tech'
 ];
 
-nav_rep();
+if(document.location.href.includes("foldverse/preview.html") == false) {
+    nav_rep();
+}
 
 if(document.location.href.endsWith("projects/main.html")) {
     project_rep();
