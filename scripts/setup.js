@@ -73,10 +73,10 @@ function project_rep() {
         let comment = document.createComment(data.html_url);
         target.appendChild(comment);
 
-        switch(data.name) {
-            case "Slick-Addons":
-                img_path = "../../resources/logo.webp"
-            }
+        if(data.name == "Slick-Addons")
+            img_path = "../../resources/logo.webp"
+        else if(data.name == "Shredded-Plugin")
+            img_path = "../../resources/covers/sus.png"
 
         main = document.createElement("div");
         main.classList.add("container_grp");
