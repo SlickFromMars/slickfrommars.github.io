@@ -24,6 +24,7 @@
 }
 
 .container_top a img {
+    background-color: white;
     width: 19vw;
     border-radius: 50%;
     animation-name: enter-pfp;
