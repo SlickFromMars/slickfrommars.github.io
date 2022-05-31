@@ -22,6 +22,36 @@
     "preview": {
         "rp_1": {
             "title": "Folda and Friends"
+        },
+        "foldverse_1": {
+            "title": "Folda and Friends"
+        },
+        "ser_1": {
+            "title": "Age of Darkness"
+        },
+        "foldverse_2": {
+            "title": "Multiverse War"
+        },
+        "rp_2": {
+            "title": "No Way Home"
+        },
+        "foldverse_3": {
+            "title": "Project Expansion"
+        },
+        "njord": {
+            "title": "Axobotl Origins"
+        },
+        "fate": {
+            "title": "Grim Fate"
+        },
+        "strike": {
+            "title": "Parallel Folds"
+        },
+        "wildcard": {
+            "title": "Wildcard"
+        },
+        "smash": {
+            "title": "Foldversus"
         }
     }
 }

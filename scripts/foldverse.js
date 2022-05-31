@@ -1,11 +1,7 @@
-var metaLink = "https://raw.githubusercontent.com/SlickFromMars/slickfrommars.github.io/main/meta/foldverse.json";
-
-var data;
+var data = JSON.parse(httpGet("https://raw.githubusercontent.com/SlickFromMars/slickfrommars.github.io/main/meta/foldverse.json"));
 
 function foldverse_rep() {
     target = document.getElementById("MasterContainer");
-
-    data = JSON.parse(httpGet(metaLink));
 
     let keys = Object.keys(data.main_page);
     keys.forEach(function(section) {
@@ -45,8 +41,25 @@ function foldverse_rep() {
 
         target.appendChild(container);
     })
-}
+} 
 
 function preview_rep() {
     let content = window.location.hash.substring(1).replace(" ", "_");
+    document.title = data.preview[content].title;
+
+    let target = document.getElementById("MainContainer");
+
+    if(data.preview[content].logo != undefined) {
+
+    } else {
+
+    }
+}
+
+function httpGet(theUrl)
+{
+    var xhr = new XMLHttpRequest();
+    xhr.open("GET", theUrl, false); // false for synchronous request
+    xhr.send(null);
+    return xhr.responseText;
 }

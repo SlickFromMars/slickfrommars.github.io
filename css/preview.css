@@ -1,0 +1,23 @@
+body {
+    background-color: rgb(26, 26, 26);
+}
+
+#PreBackButton {
+    font-size: 3vh;
+    color: white;
+    border: none;
+    background-color: transparent;
+    transition-duration: 0.5s;
+    padding: 0.3%;
+    text-align: center;
+}
+
+#PreBackButton:hover {
+    background-color: rgba(255, 255, 255, 0.096);
+}
+
+@media only screen and (max-width: 600px) {
+    #PreBackButton {
+        width: 100vw;
+    }
+}
