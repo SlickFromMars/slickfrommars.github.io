@@ -9,7 +9,7 @@ function foldverse_rep() {
 
     let keys = Object.keys(data.main_page);
     keys.forEach(function(section) {
-        let myData = data[section];
+        let myData = data.main_page[section];
 
         let comment = document.createComment("Section: " + myData.title);
         target.appendChild(comment);
