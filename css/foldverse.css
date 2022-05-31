@@ -37,26 +37,30 @@ body {
     white-space: nowrap
 }
 
-.ContentRowContainer * {
+.ContentContainer a {
     width: 19vw;
     margin: 0px 1vw;
+}
+
+.ContentRowContainer img {
+    width: inherit;
     border-radius: 0.3vw;
     border: solid 0.4vw;
     border-color: transparent;
     transition-duration: 0.5s;
 }
 
-.ContentRowContainer *:hover {
+.ContentRowContainer img:hover {
     border-color: white;
     background-color: white;
 }
 
 @media only screen and (max-width: 600px) {
     .rep_normal {
-        width: 30vw;
+        width: 30vw !important;
     }
 
     .rep_poster {
-        width: 45vw;
+        width: 45vw !important;
     }
 }

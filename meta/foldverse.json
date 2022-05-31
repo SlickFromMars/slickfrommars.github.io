@@ -1,20 +1,22 @@
 {
-    "legacy": {
-        "title": "Foldverse Legacy",
-        "format": "normal",
-        "contents": [
-            "rp_1",
-            "foldverse_1",
-            "ser_1",
-            "foldverse_2",
-            "rp_2"
-        ]
-    },
-    "coming_soon": {
-        "title": "Coming Soon",
-        "format": "poster",
-        "contents": [
-            "foldverse_3"
-        ]
+    "main_page": {
+        "legacy": {
+            "title": "Foldverse Legacy",
+            "format": "normal",
+            "contents": [
+                "rp_1",
+                "foldverse_1",
+                "ser_1",
+                "foldverse_2",
+                "rp_2"
+            ]
+        },
+        "coming_soon": {
+            "title": "Coming Soon",
+            "format": "poster",
+            "contents": [
+                "foldverse_3"
+            ]
+        }
     }
 }
