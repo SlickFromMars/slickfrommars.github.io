@@ -9,6 +9,9 @@
                 "ser_1",
                 "foldverse_2",
                 "rp_2"
+            ],
+            "hidden": [
+                
             ]
         },
         "coming_soon": {
@@ -17,7 +20,7 @@
             "contents": [
                 "foldverse_3"
             ],
-            "hidden-contents": [
+            "hidden": [
                 "njord"
             ]
         }
