@@ -9,18 +9,13 @@
                 "ser_1",
                 "foldverse_2",
                 "rp_2"
-            ],
-            "hidden": [
-                
             ]
         },
         "coming_soon": {
             "title": "Coming Soon",
             "format": "poster",
             "contents": [
-                "foldverse_3"
-            ],
-            "hidden": [
+                "foldverse_3",
                 "njord"
             ]
         }
