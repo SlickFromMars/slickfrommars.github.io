@@ -16,6 +16,9 @@
             "format": "poster",
             "contents": [
                 "foldverse_3"
+            ],
+            "hidden-contents": [
+                "njord"
             ]
         }
     },
@@ -39,7 +42,7 @@
             "title": "Project Expansion"
         },
         "njord": {
-            "title": "Axobotl Origins"
+            "title": "Axo"
         },
         "fate": {
             "title": "Grim Fate"
