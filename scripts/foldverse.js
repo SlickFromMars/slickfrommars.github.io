@@ -31,7 +31,13 @@ function foldverse_rep() {
 
             let rep = document.createElement("img");
             rep.id = item;
-            rep.src = "../../resources/showcase/" + item + ".png";
+            let myPath;
+            if(myData.format == "poster") {
+                myPath = "../../resources/posters/" + item + ".png"
+            } else {
+                myPath = "../../resources/showcase/" + item + ".png"
+            }
+            rep.src = myPath;
 
             rep_hold.appendChild(rep);
             row_container.appendChild(rep_hold);

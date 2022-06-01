@@ -25,7 +25,7 @@ body {
 
 .ContentTitle {
     font-size: 5vh;
-    margin-left: 1vw;
+    margin-left: 2vw;
     width: fit-content;
     margin-bottom: 1vh;
 }
@@ -61,6 +61,6 @@ body {
     }
 
     .rep_poster {
-        width: 45vw !important;
+        width: 35vw !important;
     }
 }
