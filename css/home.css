@@ -1,15 +1,19 @@
 .container_top {
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
+    display: flex;
     overflow: hidden;
     justify-content: center;
+    align-items: center;
+    margin-bottom: 1vh;
 }
 
 .container_top:last-child {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
     border-top: solid 1vh black;
     animation-name: enter-border;
     animation-duration: 1s;
+    margin-bottom: 10vh;
 }
 
 @keyframes enter-border {

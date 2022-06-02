@@ -3,6 +3,12 @@
 body {
     background-color:gainsboro;
     margin: 1vh;
+    transition: opacity .5s;
+}
+
+@font-face {
+    font-family: "Mandalore";
+    src:url('../resources/fonts/mandalore.ttf') format('truetype');
 }
 
 * {
@@ -43,7 +49,6 @@ body {
 }
 
 .nav_bar {
-    list-style-type: none;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.8);
     border: 1px solid #e7e7e7;
