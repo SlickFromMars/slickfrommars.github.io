@@ -66,6 +66,7 @@ body {
     padding: 1% 2%;
     margin: auto;
     justify-content: center;
+    cursor: pointer;
 }
 
 .nav_tab a {
@@ -82,6 +83,7 @@ body {
 }
 
 .nav_logo {
+    cursor: pointer;
     display: block;
     float: left;
     background-color: transparent;

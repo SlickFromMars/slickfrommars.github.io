@@ -18,11 +18,13 @@ if(document.location.href.endsWith("projects/main.html")) {
     project_rep();
 }
 
+var pre_path;
+
 function nav_rep() {
     var target = document.getElementById('nav_target');
 
     // make the path prefix
-    var pre_path = "../../";
+    pre_path = "../../";
     if(window.location.href.endsWith('index.html')) {
         pre_path = "";
     }
@@ -32,8 +34,9 @@ function nav_rep() {
     target.innerHTML = ""
 
     // the logo
-    var icon = document.createElement("a");
-    icon.href = pre_path + "index.html";
+    var icon = document.createElement("span");
+    let str_ref = "goTo('" + pre_path + "index.html" + "')";
+    icon.setAttribute("onclick", str_ref);
 
     img = document.createElement("img");
     img.classList.add("nav_logo");
@@ -52,10 +55,11 @@ function nav_rep() {
         
         tab = document.createElement("button");
         tab.classList.add("nav_tab");
+        let str_ref = "goTo('" + pre_path + "pages/" + tab_name.toLowerCase() + "/main.html" + "')";
+        tab.setAttribute("onclick", str_ref);
 
         tab_tex = document.createElement("a");
         tab_tex.innerHTML = tab_name;
-        tab_tex.href = pre_path + "pages/" + tab_name.toLowerCase() + "/main.html";
 
         tab.appendChild(tab_tex);
 
@@ -123,4 +127,8 @@ function httpGet(theUrl)
     xhr.open("GET", theUrl, false); // false for synchronous request
     xhr.send(null);
     return xhr.responseText;
+}
+
+window.goTo = function(href) {
+    window.location.href = href;
 }
