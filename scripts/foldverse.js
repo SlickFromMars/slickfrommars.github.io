@@ -32,7 +32,7 @@ function foldverse_rep() {
             let rep = document.createElement("img");
             rep.id = item;
             rep.loading = "lazy";
-            let myPath = "https://raw.githubusercontent.com/SlickFromMars/slickfrommars.github.io/main/resources/";
+            let myPath = "../../resources/"
             if(myData.format == "poster") {
                 myPath += "posters/" + item + ".png"
             } else {
