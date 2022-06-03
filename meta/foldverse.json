@@ -31,28 +31,36 @@
     },
     "preview": {
         "scratch_bros": {
-            "title": "Super Scratch Bros"
+            "title": "Super Scratch Bros",
+            "href": "https://scratch.mit.edu/projects/395416687"
         },
         "starchasers": {
-            "title": "Starchasers"
+            "title": "Starchasers",
+            "href": "https://scratch.mit.edu/projects/456709646/"
         },
         "survival": {
-            "title": "Scratch Survival"
+            "title": "Scratch Survival",
+            "href": "https://scratch.mit.edu/projects/398381603/"
         },
         "rp_1": {
-            "title": "Folda and Friends"
+            "title": "Folda and Friends",
+            "href": "https://scratch.mit.edu/studios/26464507"
         },
         "foldverse_1": {
-            "title": "Folda and Friends"
+            "title": "Folda and Friends",
+            "href": "https://scratch.mit.edu/projects/409758639"
         },
         "ser_1": {
-            "title": "Age of Darkness"
+            "title": "Age of Darkness",
+            "href": "https://scratch.mit.edu/studios/31715374"
         },
         "foldverse_2": {
-            "title": "Multiverse War"
+            "title": "Multiverse War",
+            "href": "https://scratch.mit.edu/projects/509347171"
         },
         "rp_2": {
-            "title": "No Way Home"
+            "title": "No Way Home",
+            "href": "https://scratch.mit.edu/studios/29694973"
         },
         "foldverse_3": {
             "title": "Project Expansion"
