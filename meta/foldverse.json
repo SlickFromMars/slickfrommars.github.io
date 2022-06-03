@@ -23,13 +23,21 @@
             "title": "Associated Titles",
             "format": "normal",
             "contents": [
-                "scratch_bros"
+                "scratch_bros",
+                "starchasers",
+                "survival"
             ]
         }
     },
     "preview": {
         "scratch_bros": {
             "title": "Super Scratch Bros"
+        },
+        "starchasers": {
+            "title": "Starchasers"
+        },
+        "survival": {
+            "title": "Scratch Survival"
         },
         "rp_1": {
             "title": "Folda and Friends"
