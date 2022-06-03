@@ -27,16 +27,20 @@ function foldverse_rep() {
 
             let rep_hold = document.createElement("a");
             rep_hold.classList.add("rep_" + myData.format);
-            rep_hold.href = "preview.html#" + item;
+            if(data.preview[item].href != undefined) {
+                rep_hold.href = data.preview[item].href;
+            } else {
+                rep_hold.href = "preview.html#" + item;
+            }
 
             let rep = document.createElement("img");
             rep.id = item;
             rep.loading = "lazy";
             let myPath = "../../resources/"
             if(myData.format == "poster") {
-                myPath += "posters/" + item + ".png"
+                myPath += "posters/" + item + ".webp"
             } else {
-                myPath += "showcase/" + item + ".png"
+                myPath += "showcase/" + item + ".webp"
             }
             rep.src = myPath;
 
