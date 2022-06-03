@@ -35,7 +35,6 @@ function foldverse_rep() {
 
             let rep = document.createElement("img");
             rep.id = item;
-            rep.loading = "lazy";
             let myPath = "../../resources/"
             if(myData.format == "poster") {
                 myPath += "posters/" + item + ".webp"
