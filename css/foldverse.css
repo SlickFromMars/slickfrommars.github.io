@@ -57,10 +57,10 @@ body {
 
 @media only screen and (max-width: 600px) {
     .rep_normal {
-        width: 30vw !important;
+        width: 35vw !important;
     }
 
     .rep_poster {
-        width: 35vw !important;
+        width: 40vw !important;
     }
 }
