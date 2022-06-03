@@ -18,9 +18,19 @@
                 "foldverse_3",
                 "njord"
             ]
+        },
+        "sponsored": {
+            "title": "Associated Titles",
+            "format": "normal",
+            "contents": [
+                "scratch_bros"
+            ]
         }
     },
     "preview": {
+        "scratch_bros": {
+            "title": "Super Scratch Bros"
+        },
         "rp_1": {
             "title": "Folda and Friends"
         },

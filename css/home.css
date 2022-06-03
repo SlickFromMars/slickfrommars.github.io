@@ -11,15 +11,8 @@
     margin-left: auto;
     margin-right: auto;
     border-top: solid 1vh black;
-    animation-name: enter-border;
     animation-duration: 1s;
     margin-bottom: 10vh;
-}
-
-@keyframes enter-border {
-    0% {border-top: solid 1vh transparent}
-    50% {border-top: solid 1vh transparent}
-    100% {border-top: solid 1vh initial}
 }
 
 .container_top a {
