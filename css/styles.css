@@ -206,3 +206,50 @@ body {
         width: 80%;
     }
 }
+
+#ProjectSplit {
+    text-align: center;
+    padding: 4vh;
+}
+
+#ProjectSplit h1 {
+    font-size: 3vw;
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+}
+
+#RenderContainer {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+#RenderContainer .column {
+    flex: 30%;
+    max-width: 30%;
+    padding: 0 1%;
+}
+
+#RenderContainer .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+#RenderContainer .column h2 {
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 4px;
+    font-size: 4vh;
+}
+
+@media only screen and (max-width: 600px) {
+    #ProjectSplit h1 {
+        font-size: 5vw;
+    }
+    #RenderContainer .column {
+        flex: 100%;
+        max-width: 100%;
+        padding: 0px;
+    }
+}
