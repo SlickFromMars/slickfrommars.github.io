@@ -1,10 +1,10 @@
 {
-    "repo_list": [
+    "repos": [
         "Shredded-Plugin",
         "Slick-Adoons",
         "ABLE-Tech"
     ],
-    "render_list": {
+    "artwork": {
         "CloseCall": {
             "author": "PokiADoki"
         },
@@ -18,7 +18,7 @@
 
         },
         "LostGalactic": {
-
+            
         }
     }
 }
