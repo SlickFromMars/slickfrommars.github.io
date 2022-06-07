@@ -13,7 +13,7 @@ function project_rep() {
         if(data.name == "Slick-Addons")
             img_path = "../../resources/logo.webp"
         else if(data.name == "Shredded-Plugin")
-            img_path = "../../resources/covers/sus.png"
+            img_path = "../../resources/covers/sus.webp"
 
         main = document.createElement("div");
         main.classList.add("container_grp");
