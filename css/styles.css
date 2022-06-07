@@ -207,20 +207,18 @@ body {
     }
 }
 
-#ProjectSplit {
-    text-align: center;
-    padding: 4vh;
-}
-
-#ProjectSplit h1 {
+#RenderContainer h1 {
     font-size: 3vw;
     animation-name: fade-in;
     animation-duration: 1.5s;
+    padding: 4vh;
+    width: 100%;
 }
 
 #RenderContainer {
     display: flex;
     flex-wrap: wrap;
+    text-align: center;
     padding: 0 4px;
 }
 
@@ -244,12 +242,17 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    #ProjectSplit h1 {
+    #RenderContainer h1 {
         font-size: 5vw;
     }
+
     #RenderContainer .column {
         flex: 100%;
         max-width: 100%;
         padding: 0px;
+    }
+    
+    #RenderContainer .column h2 {
+        display: none;
     }
 }

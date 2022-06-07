@@ -66,13 +66,13 @@ function render_rep() {
         } else {
             swc = swc + 1;
         }
-        let img_path ="../../resources/art/" + render + ".png";
+        let img_path ="../../resources/art/" + render + ".webp";
 
         let secondary;
 
         if(data.artwork[render].author != undefined) {
             secondary = document.createElement("h2");
-            secondary.innerHTML = data.artwork[render].author;
+            secondary.innerHTML = "By " + data.artwork[render].author;
         } else {
             secondary = document.createComment("no author lol");
         }
@@ -80,6 +80,7 @@ function render_rep() {
         let img = document.createElement("img");
         img.src = img_path;
         img.alt = render;
+        img.loading = "lazy";
         if(swc == 0) {
             col1.appendChild(img);
             col1.appendChild(secondary);
