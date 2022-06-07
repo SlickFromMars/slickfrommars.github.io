@@ -57,11 +57,13 @@ function render_rep() {
     col2.classList.add("column");
     var col3 = document.createElement("div");
     col3.classList.add("column");
+    var col4 = document.createElement("div");
+    col4.classList.add("column");
 
     var swc = -1;
 
     Object.keys(data.artwork).forEach(function(render) {
-        if(swc == 2) {
+        if(swc == 3) {
             swc = 0;
         } else {
             swc = swc + 1;
@@ -87,14 +89,18 @@ function render_rep() {
         } else if(swc == 1) {
             col2.appendChild(img);
             col2.appendChild(secondary);
-        } else {
+        } else if(swc == 2) {
             col3.appendChild(img);
             col3.appendChild(secondary);
+        } else {
+            col4.appendChild(img);
+            col4.appendChild(secondary);
         }
     })
     target.appendChild(col1);
     target.appendChild(col2);
     target.appendChild(col3);
+    target.appendChild(col4);
 }
 
 function dataGet(repo) {

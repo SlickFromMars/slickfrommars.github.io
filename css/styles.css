@@ -223,8 +223,8 @@ body {
 }
 
 #RenderContainer .column {
-    flex: 30%;
-    max-width: 30%;
+    flex: 23%;
+    max-width: 23%;
     padding: 0 1%;
 }
 
@@ -241,6 +241,17 @@ body {
     font-size: 4vh;
 }
 
+@media only screen and (max-width: 800px) {
+    #RenderContainer .column {
+        flex: 48%;
+        max-width: 48%;
+    }
+    
+    #RenderContainer .column h2 {
+        display: none;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     #RenderContainer h1 {
         font-size: 5vw;
@@ -250,9 +261,5 @@ body {
         flex: 100%;
         max-width: 100%;
         padding: 0px;
-    }
-    
-    #RenderContainer .column h2 {
-        display: none;
     }
 }
