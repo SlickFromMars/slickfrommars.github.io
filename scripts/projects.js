@@ -64,6 +64,7 @@ function render_rep() {
 
     var modal = document.getElementById("myModal");
     var modalImg = document.getElementById("modal-content");
+    var captionText = document.getElementById("caption");
 
     Object.keys(data.artwork).forEach(function(render) {
         if(swc == 3) {
@@ -92,6 +93,7 @@ function render_rep() {
         img.onclick = function(){
             modal.style.display = "block";
             modalImg.src = this.src;
+            captionText.innerHTML = secondary.innerHTML;
         }
 
         // Get the <span> element that closes the modal
