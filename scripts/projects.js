@@ -62,6 +62,9 @@ function render_rep() {
 
     var swc = -1;
 
+    var modal = document.getElementById("myModal");
+    var modalImg = document.getElementById("modal-content");
+
     Object.keys(data.artwork).forEach(function(render) {
         if(swc == 3) {
             swc = 0;
@@ -80,9 +83,25 @@ function render_rep() {
         }
 
         let img = document.createElement("img");
+        img.classList.add("ModalTrigger");
         img.src = img_path;
         img.alt = render;
         img.loading = "lazy";
+        img.id = render + "_trigger";
+
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+
         if(swc == 0) {
             col1.appendChild(img);
             col1.appendChild(secondary);
